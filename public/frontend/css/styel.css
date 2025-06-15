@@ -1,0 +1,147 @@
+*{
+	margin: 0px;
+	font-family: century gothic;
+	padding: 0px;
+	
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+ }
+ 
+ .navbar
+ {
+    background-color:#343a40;
+ 
+ }
+ 
+ .brand-navbar{
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 80px;
+ }
+ 
+ .navbar ul
+ {
+ padding: 0px 40px 0px 0px;
+ }
+ .navbar ul li a{
+    color: white;
+    margin: 10px 0px 0px 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+ }
+ .navbar ul li a .fas{
+    padding-right:5px; 
+    padding-left:5px; 
+ }
+ .navbar ul li a:hover{
+    color: #2e42b4;
+ }
+ .navbar ul li.active > a {
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 40px;
+    color: white;
+   
+ } 
+ 
+  /* Hero Section */
+  .hero {
+ 
+    background-size: cover;
+    background-position: center;
+    color: rgb(22, 21, 21);
+    text-align: center;
+    padding: 100px 0;
+   }
+   
+   .hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+   }
+   
+   .hero p {
+    font-size: 1.25rem;
+   }
+   
+   /* Blog Cards */
+   
+   .card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: 0.3s;
+   }
+ 
+
+
+/* Blog Post Cards */
+.card {
+   border: none;
+   border-radius: 15px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-img-top {
+  
+   background-size: cover;
+   background-position: center;
+   height: 300px;
+   width: 100%;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+}
+
+.card-body {
+   padding: 20px;
+}
+
+.card-title {
+   font-size: 1.8rem;
+   font-weight: 600;
+   margin-bottom: 15px;
+}
+
+.card-text {
+   color: #555;
+   font-size: 1.1rem;
+   margin-bottom: 20px;
+}
+
+.card .btn-primary {
+   background-color: #3498db;
+   border: none;
+   border-radius: 50px;
+   padding: 10px 20px;
+}
+
+.card .btn-primary:hover {
+   background-color: #2980b9;
+}
+
+/* General Spacing */
+.mt-5 {
+   margin-top: 5rem !important;
+}
+
+.mb-4 {
+   margin-bottom: 1.5rem !important;
+}
+
+
+
+
+ 
+ /* Footer */
+ footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+ }
+ 
+ footer p {
+  margin: 0;
+ }
+ 
