@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Backend;
 
-use App\Models\course;
+use App\Models\Course;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
 
-class CourseController extends Controller
+class CoursesController extends Controller
 {
-    // Show the form
+      // Show the form
     public function create()
     {
         return view('courses.create');
@@ -60,22 +60,12 @@ public function store(Request $request)
 }
 
 
-    /**
-     * Optional: Show list of courses
-     */
+    
     public function index()
     {
         $courses = Course::with('modules.contents')->get();
         return view('courses.index', compact('courses'));
     }
 
-    /**
-     * Optional: Show single course details
-     */
-    // public function show($id)
-    // {
-    //     $course = course::with('modules.contents')->findOrFail($id);
-    //     return view('courses.show', compact('course'));
-    // }
 
 }

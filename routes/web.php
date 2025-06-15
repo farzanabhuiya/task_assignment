@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\CoursesController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CourseController;
@@ -20,9 +21,9 @@ Auth::routes();
 
 
  
-Route::get('/courses/create', [CourseController::class, 'create'])->name('courses.create');
-Route::post('/courses', [CourseController::class, 'store'])->name('courses.store');
-Route::get('/courses', [CourseController::class, 'index'])->name('courses.index');
+Route::get('/courses/create', [CoursesController::class, 'create'])->name('courses.create');
+Route::post('/courses', [CoursesController::class, 'store'])->name('courses.store');
+Route::get('/courses', [CoursesController::class, 'index'])->name('courses.index');
 
  
 

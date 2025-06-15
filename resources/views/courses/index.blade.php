@@ -13,7 +13,7 @@
 							</div>
 						</div>
 					</div>
-					<!-- /.container-fluid -->
+					
 				</section>
 				<!-- Main content -->
 				<section class="content">
@@ -22,11 +22,6 @@
 						<div class="card">
 							<form action="" method="get">
 							<div class="card-header">
-								@if (session('success'))
-                          <div  class="alert alert-success w-10 h-20">
-                              <h2>{{session('success')}}</h2>
-                          </div>
-                            @endif
 								
 							
 						</form>
@@ -47,14 +42,8 @@
 										<tr>
 											
 											<td>{{ $key + 1 }}</td>
-											{{-- <td><img style="width: 80px;height:80px object-fit:cover;obect-position:center;" 
-												src="{{asset('storage/post/'.$courses->image)}}"></td> --}}
 											<td>{{$course->title}}</td>
-
-										
-											<td>{!! Str::length($course->description) > 30 ? substr($course->description,0,30).'....' : $course->description !!}</td>
-
-											
+											<td>{!! Str::length($course->description) > 30 ? substr($course->description,0,30).'....' : $course->description !!}</td>			
 											
 										</tr>
 										@endforeach

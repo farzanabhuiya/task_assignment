@@ -36,14 +36,11 @@
                 <!-- Modules Section -->
                 <div class="mt-3">
                     <button type="button" id="addModule" class="btn btn-primary"  name="modules[0][title]" >Add Module </button>
-                    {{-- <input type="text" name="modules[0][title]" placeholder="Module Title"> --}}
+
                 </div>
                 <div id="modulesWrapper">
                     
                 </div>
-
-                <!-- Add Module Button -->
-                
 
                 <!-- Submit Buttons -->
                 <div class="pt-4">
@@ -55,6 +52,12 @@
     </form>
 </section>
 @endsection
+
+
+
+
+
+
 
 @push('customJs')
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -72,7 +75,7 @@ function generateModuleHTML(moduleIndex) {
 
         <h5 class="mb-3">Module ${moduleIndex + 1}</h5>
         <input type="text" name="modules[${moduleIndex}][title]" class="form-control mb-3" placeholder="Module Title" required>
-       <button type="button" class="btn btn-primary addContent mt-3"> Add Content</button>
+       <button type="button" class="btn btn-primary addContent mt-3 " style="width: 150px;"> Add Content</button>
         <div class="contentsWrapper d-none"></div>
 
         
@@ -82,7 +85,7 @@ function generateModuleHTML(moduleIndex) {
 // Generate Content Row
 function generateContentInputs(moduleIndex, contentIndex) {
     return `
-    <div class="row g-2 mb-3 mt-2 content border border-success p-3 rounded bg-light position-relative">
+    <div class="row g-2 mb-3 mt-2 content border border-2 p-3 rounded bg-light position-relative">
         <button type="button" class="btn-close position-absolute top-0 end-0 m-2 removeContent" aria-label="Close"></button>
 
         <div class="col-md-6 ">

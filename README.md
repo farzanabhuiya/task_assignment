@@ -71,13 +71,13 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 
-# 🎓 Laravel Course Management System
+# Laravel Course Management System
 
 A course management web application built with Laravel where each course contains multiple modules and each module has multiple contents (text, image, video).
 
 ---
 
-## 🚀 Features
+## Features
 
 - Create Courses with title, description, and category
 - Add multiple Modules under a Course
@@ -90,17 +90,19 @@ A course management web application built with Laravel where each course contain
 
 ## 📸 Screenshots
 
-![Course Page](screenshots/course-page.png)
-![Create Form](screenshots/create-form.png)
+![Course Page](screenshots/course-create.png)
+![frontend page](screenshots/frontend-page.png)
 
 ---
 
-## ⚙️ Project Setup Instructions
+
+
+## Project Setup Instructions
 
 1. Clone the repository:
 
    bash
-   git clone https://github.com/yourusername/course-management.git
+   git clone https://github.com/farzanabhuiya/task_assignment
    cd course-management
 
  2.  Install dependencies:

@@ -10,6 +10,47 @@
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
     
 
+<!-- Bootstrap Icons CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+    body {
+        background: #f0f4ff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .card-header {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 20px rgba(0,123,255,.3);
+        transition: 0.3s ease-in-out;
+    }
+
+    article:hover {
+        background-color: #e9f1ff;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Make image align to the left */
+    .img-left {
+        display: block;
+        margin-left: 0;
+        margin-right: auto;
+        max-height: 80px;
+        object-fit: cover;
+    }
+   
+a.btn.btn-outline-primary.btn-sm {
+    max-width: 150px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+</style>
 
 
 <body>
